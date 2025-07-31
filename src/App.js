@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import MovieCard from './components/movie_card'; 
-// import SearchIcon from './search.svg';
+import SearchIcon from './assets/images/search.svg';
 import './App.css';
 
 const API_URL = process.env.REACT_APP_MOVIES_API_URL || '';
@@ -40,11 +40,12 @@ const App = () => {
           onChange={handleInputChange}
           onKeyDown={handleKeyPress}
         />
-        {/* <img
+        <img
+          className="search_icon"
           src={SearchIcon}
           alt="search"
           onClick={() => searchMovies(searchQuery)}
-        /> */}
+        />
       </div>
       <div className="container">
         {movieList.length > 0 ? (
