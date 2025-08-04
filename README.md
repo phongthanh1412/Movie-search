@@ -38,11 +38,11 @@ SearchMovie is a web application allows users to search for movies, view detaile
 2. Clone, fork, or download the project
 - Open Command Prompt or Terminal.
 ```
-  git clone https://github.com/phongthanh1412/SearchMovie.git
+  git clone https://github.com/phongthanh1412/Movie-search.git
 ```
 - Navigate to the project directory:
 ```
-  cd SearchMovie
+  cd movie-search
 ```
 3. Install dependencies
 ```
@@ -51,7 +51,7 @@ SearchMovie is a web application allows users to search for movies, view detaile
 ## Run the Application
 1. Navigate to the project directory
   ```
-    cd SearchMovie
+    cd movie-search
   ```
 2. Run
   ```
