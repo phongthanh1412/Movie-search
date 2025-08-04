@@ -19,7 +19,7 @@ const MovieSearchDashboard = () => {
 
   // Function to call OMDB API
   const searchOMDBAPI = useCallback(async (query) => {
-    const apiKey = 'eb8cfdce'; // Replace with your API key
+    const apiKey = process.env.REACT_APP_OMDB_API_KEY;
     const startTime = Date.now();
 
     try {
