@@ -1,70 +1,70 @@
-# Getting Started with Create React App (under development : D...)
+# SearchMovie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+SearchMovie is a web application allows users to search for movies, view detailed information, and manage their favorite films and watchlists. 
 
-In the project directory, you can run:
+## Objectives
+- Allow users to mark movies as favorites or add them to a watchlist for future viewing. 
+- Provide a responsive and visually appealing interface for navigation across devices. 
+- Display search statistics, such as the number of results and search time, to enhance user experience.
+- Handle errors gracefully and provide suggestions when no results are found.
+  
+## Tools and Technologies
+- Visual Studio Code 
+- Node.js (for running the React development server) 
+- React Developer Tools (for debugging) 
+- Browser Developer Tools (for testing responsiveness)
+## Language
+- JavaScript (React)
+- HTML/CSS (with Tailwind CSS)
+## List of App Features
+| Feature                | Description |
+|------------------------|-------------|
+| **Movie Search** | Search for movies by title, genre, or director using the OMDB API. |
+| **Responsive UI**     | Fully responsive design with a modern header, search bar, and movie grid for desktop and mobile. |
+| **Favorites & Watchlist**          | Mark movies as favorites or add to a watchlist with persistent state management. |
+| **Search Statistics**   | Display the number of results and search time after each query. |
+## Instructions
+- Enter a movie title, genre, or director in the search bar and press Enter to search. 
+- Click the heart icon to toggle a movie as a favorite. 
+- Click the bookmark icon to add/remove a movie from the watchlist. 
+- Use the navigation buttons (Home, Trending, Favorites, Watchlist) to explore different sections. 
+- On mobile, toggle the menu to access navigation options. 
+- Scroll to the top using the floating button in the bottom-right corner.
+## Project Setup
+1. Install Node.js
+- Download and install Node.js (version 16 or higher) from nodejs.org.
+2. Clone, fork, or download the project
+- Open Command Prompt or Terminal.
+```
+  git clone https://github.com/phongthanh1412/SearchMovie.git
+```
+- Navigate to the project directory:
+```
+  cd SearchMovie
+```
+3. Install dependencies
+```
+   npm install
+```
+## Run the Application
+1. Navigate to the project directory
+  ```
+    cd SearchMovie
+  ```
+2. Run
+  ```
+    npm start
+  ```
+- The app will open in your default browser at `http://localhost:3000`
 
-### `npm start`
+## Appendix
+### Dependencies
+- `React`: JavaScript library for building the user interface.
+- `tailwindcss`: Utility-first CSS framework for styling the application.
+### References
+- https://tailwindcss.com/docs/installation/using-vite
+- https://create-react-app.dev/docs/getting-started/
+- https://www.omdbapi.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -52,7 +52,7 @@ const Header = () => {
               />
               <input
                 type="text"
-                placeholder="Search movies, actors, directors..."
+                placeholder="Search for movies"
                 value={searchQuery}
                 onChange={handleSearchChange}
                 onFocus={() => setIsSearchFocused(true)}
@@ -82,7 +82,7 @@ const Header = () => {
               onClick={() => window.location.href = '/movie-search-dashboard'}
             >
               <Icon name="Home" size={18} className="mr-2" />
-              Dashboard
+              Home
             </Button>
             
             <Button

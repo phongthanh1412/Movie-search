@@ -14,6 +14,7 @@ const MovieCard = ({ movie, onAddToWatchlist, onToggleFavorite }) => {
     poster,
     duration,
     director,
+    writer,
     isFavorite = false,
     isInWatchlist = false
   } = movie;
@@ -24,10 +25,10 @@ const MovieCard = ({ movie, onAddToWatchlist, onToggleFavorite }) => {
       <div className="relative aspect-[2/3] overflow-hidden">
         <Image
           src={poster}
-          alt={`Poster phim ${title}`}
+          alt={`Poster for ${title}`}
           className="w-full h-full object-cover group-hover:scale-105 transition-cinema"
         />
-        
+
         {/* Overlay Actions */}
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-cinema flex items-center justify-center">
           <div className="flex space-x-2">
@@ -37,23 +38,23 @@ const MovieCard = ({ movie, onAddToWatchlist, onToggleFavorite }) => {
               onClick={() => onToggleFavorite(id)}
               className="bg-background/90 hover:bg-background"
             >
-              <Icon 
-                name={isFavorite ? "Heart" : "Heart"} 
-                size={18} 
-                className={isFavorite ? "text-red-500 fill-current" : "text-foreground"} 
+              <Icon
+                name={isFavorite ? "Heart" : "Heart"}
+                size={18}
+                className={isFavorite ? "text-red-500 fill-current" : "text-foreground"}
               />
             </Button>
-            
+
             <Button
               variant="secondary"
               size="icon"
               onClick={() => onAddToWatchlist(id)}
               className="bg-background/90 hover:bg-background"
             >
-              <Icon 
-                name={isInWatchlist ? "BookmarkCheck" : "Bookmark"} 
-                size={18} 
-                className={isInWatchlist ? "text-primary" : "text-foreground"} 
+              <Icon
+                name={isInWatchlist ? "BookmarkCheck" : "Bookmark"}
+                size={18}
+                className={isInWatchlist ? "text-primary" : "text-foreground"}
               />
             </Button>
           </div>
@@ -74,7 +75,7 @@ const MovieCard = ({ movie, onAddToWatchlist, onToggleFavorite }) => {
           </h3>
           <div className="flex items-center justify-between text-sm text-muted-foreground">
             <span>{year}</span>
-            <span>{duration} phút</span>
+            <span>{duration} mins</span>
           </div>
         </div>
 
@@ -83,9 +84,13 @@ const MovieCard = ({ movie, onAddToWatchlist, onToggleFavorite }) => {
             <Icon name="Film" size={14} className="text-muted-foreground" />
             <span className="text-sm text-muted-foreground">{genre}</span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 mb-2">
             <Icon name="User" size={14} className="text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">Đạo diễn: {director}</span>
+            <span className="text-sm text-muted-foreground">Director: {director}</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <Icon name="Pen" size={14} className="text-muted-foreground" />
+            <span className="text-sm text-muted-foreground">Writers: {writer}</span>
           </div>
         </div>
 
@@ -103,9 +108,9 @@ const MovieCard = ({ movie, onAddToWatchlist, onToggleFavorite }) => {
             iconPosition="left"
             iconSize={16}
           >
-            Xem trailer
+            Watch Trailer
           </Button>
-          
+
           <Button
             variant="outline"
             size="sm"
@@ -114,7 +119,7 @@ const MovieCard = ({ movie, onAddToWatchlist, onToggleFavorite }) => {
             iconPosition="left"
             iconSize={16}
           >
-            Chi tiết
+            Details
           </Button>
         </div>
       </div>

@@ -10,10 +10,10 @@ const ErrorState = ({ onRetry, searchQuery }) => {
           <Icon name="AlertCircle" size={32} className="text-destructive" />
         </div>
         <h3 className="text-xl font-semibold text-foreground mb-3">
-          Có lỗi xảy ra
+          An Error Occurred
         </h3>
         <p className="text-muted-foreground max-w-md mx-auto mb-6">
-          Không thể tải kết quả tìm kiếm cho "{searchQuery}". Vui lòng kiểm tra kết nối mạng và thử lại.
+          Could not load search results for "{searchQuery}". Please check your network connection and try again.
         </p>
       </div>
 
@@ -25,15 +25,15 @@ const ErrorState = ({ onRetry, searchQuery }) => {
           iconPosition="left"
           iconSize={16}
         >
-          Thử lại
+          Try Again
         </Button>
 
         <div className="text-sm text-muted-foreground">
-          <p>Nếu vấn đề vẫn tiếp tục, hãy:</p>
+          <p>If the problem persists, please:</p>
           <ul className="mt-2 space-y-1">
-            <li>• Kiểm tra kết nối internet</li>
-            <li>• Thử tìm kiếm với từ khóa khác</li>
-            <li>• Làm mới trang web</li>
+            <li>• Check your internet connection</li>
+            <li>• Try searching with a different keyword</li>
+            <li>• Refresh the webpage</li>
           </ul>
         </div>
       </div>
