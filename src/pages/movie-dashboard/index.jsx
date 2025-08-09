@@ -38,11 +38,11 @@ const MovieSearchDashboard = () => {
           const detailData = await detailResponse.json();
 
           if (detailData.Response === 'False') {
-            return null; // Skip if detailed information cannot be retrieved
+            return null; 
           }
 
           return {
-            id: index + 1, // Generate temporary ID, or use movie.imdbID
+            id: index + 1, 
             title: detailData.Title,
             year: parseInt(detailData.Year, 10),
             rating: detailData.imdbRating ? parseFloat(detailData.imdbRating) : null,
@@ -101,7 +101,6 @@ const MovieSearchDashboard = () => {
     }
   }, [searchOMDBAPI]);
 
-  // Other functions remain unchanged
   const handleRetry = () => {
     if (searchQuery?.trim()) {
       handleSearch(searchQuery);
